@@ -14,6 +14,8 @@ import os
 # Initialize flask
 app = Flask(__name__)
 
+load_dotenv()
+
 # Load API KEYS
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
